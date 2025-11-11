@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/henawy-app/static/css/main.62d56a4f.css",
+    "main.js": "/henawy-app/static/js/main.0d1bf3a0.js",
+    "static/js/453.5b1323d9.chunk.js": "/henawy-app/static/js/453.5b1323d9.chunk.js",
+    "static/media/bubble2.png": "/henawy-app/static/media/bubble2.2782bb428ba4a239e443.png",
+    "static/media/henawy.png": "/henawy-app/static/media/henawy.bca2eb570d0d105fa29c.png",
+    "static/media/work2.png": "/henawy-app/static/media/work2.6f00a1548a4e82efc819.png",
+    "static/media/plane.png": "/henawy-app/static/media/plane.d44a964c99fab6a01376.png",
+    "static/media/splatter.png": "/henawy-app/static/media/splatter.e85377045b40d09e9dcb.png",
+    "static/media/loading.png": "/henawy-app/static/media/loading.2a582290a70905965293.png",
+    "static/media/bubble1.png": "/henawy-app/static/media/bubble1.d642ad7244f3acf25ca7.png",
+    "static/media/bubble3.png": "/henawy-app/static/media/bubble3.2e21499b5b7c69840eff.png",
+    "static/media/contactplane.png": "/henawy-app/static/media/contactplane.b11f83b4c90dded9fd6d.png",
+    "static/media/work1.png": "/henawy-app/static/media/work1.89e891603181fb5faf36.png",
+    "static/media/wavy.png": "/henawy-app/static/media/wavy.53fe6aaf223baba78d43.png",
+    "static/media/work3.png": "/henawy-app/static/media/work3.5eb253294416e1251f00.png",
+    "static/media/LOGO2.png": "/henawy-app/static/media/LOGO2.34de130b94566809fa46.png",
+    "static/media/BLACK SPLATTER.png": "/henawy-app/static/media/BLACK SPLATTER.5f8fcbea3e3f39bd2b21.png",
+    "static/media/direction.png": "/henawy-app/static/media/direction.0c08a356d2dd963860f0.png",
+    "static/media/LOGO3.png": "/henawy-app/static/media/LOGO3.a1d51970010ba4a837c0.png",
+    "static/media/US.png": "/henawy-app/static/media/US.270e07edd82c5fba6550.png",
+    "static/media/cyanUSA.png": "/henawy-app/static/media/cyanUSA.05dbac790b720ab787ef.png",
+    "static/media/cyanEgypt.png": "/henawy-app/static/media/cyanEgypt.8a33519d9f5f41c07195.png",
+    "static/media/menu.svg": "/henawy-app/static/media/menu.5f1ed4637d48919fcbe48b8efeac33d3.svg",
+    "static/media/home.svg": "/henawy-app/static/media/home.55b60f52e090139c5ac355d3608cc9d6.svg",
+    "static/media/instagramLogo.svg": "/henawy-app/static/media/instagramLogo.5e9091a621f675820b54c5871d5cc69c.svg",
+    "static/media/linkedinLogo.svg": "/henawy-app/static/media/linkedinLogo.f75bd06e22e32f394c1eb936f47ea0df.svg",
+    "index.html": "/henawy-app/index.html",
+    "static/media/facebookLogo.svg": "/henawy-app/static/media/facebookLogo.ff6e78acc7f736417c9ffc773b9a6200.svg",
+    "static/media/scroll.svg": "/henawy-app/static/media/scroll.32fdc7f9d8d5545490dc407b9389d490.svg",
+    "main.62d56a4f.css.map": "/henawy-app/static/css/main.62d56a4f.css.map",
+    "main.0d1bf3a0.js.map": "/henawy-app/static/js/main.0d1bf3a0.js.map",
+    "453.5b1323d9.chunk.js.map": "/henawy-app/static/js/453.5b1323d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62d56a4f.css",
+    "static/js/main.0d1bf3a0.js"
+  ]
+}
