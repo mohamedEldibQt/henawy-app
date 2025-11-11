@@ -1,0 +1,328 @@
+.App {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.App::before,
+.App::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a202b;
+  position: fixed;
+  z-index: 120;
+}
+.App::before {
+  top: -50%;
+  animation: app-top-move 2s linear forwards;
+}
+.App::after {
+  bottom: -50%;
+  animation: app-bottom-move 2s linear forwards;
+}
+.App .rightBar .opened-menu .column:first-child a:nth-of-type(1) {
+  color: #585f6d;
+  text-decoration: line-through;
+  pointer-events: none;
+  text-decoration-color: #00e5ea;
+  text-decoration-thickness: 4px;
+}
+.App .bubble1 {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22vw;
+}
+.App .bubble2 {
+  position: absolute;
+  top: 431px;
+  right: -21.5vw;
+  width: 43vw;
+}
+@media (max-width: 769px) {
+  .App .bubble1,
+  .App .bubble2 {
+    display: none;
+  }
+}
+.about .about-text {
+  background-color: #273040bd;
+  box-shadow: 0 0 150px #000000a6;
+  position: relative;
+  z-index: 101;
+  color: white;
+  width: 45%;
+  padding: 8%;
+  margin: 200px auto 0;
+  border-radius: 40px;
+}
+.about .about-text h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 4.9vw;
+}
+.about .about-text p {
+  margin: 30px 0 0 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.about .wavy {
+  transform: scaleX(-1) rotate(10deg);
+  width: 100%;
+}
+@media (max-width: 769px) {
+  .about .about-text {
+    width: unset;
+    margin: 200px 0 0;
+    border-radius: 0;
+  }
+}
+.about .skills {
+  padding: 0 200px 400px;
+  background: url(./images/bubble2.png) 125% 100% no-repeat;
+  background-size: 40%;
+}
+.about .skills .skill {
+  width: 40%;
+}
+.about .skills .skill .logo {
+  background-color: #1a202b;
+  width: 220px;
+  height: 220px;
+  border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+  animation: liquid 5s ease-in-out infinite;
+}
+.about .skills .skill:last-child .logo img {
+  margin-top: 40px;
+}
+.about .skills .skill h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-align: start;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.about .skills .skill p {
+  margin: 30px 0 0 0;
+  text-align: start;
+  color: #7c8898;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.about .skills .skill:nth-child(2) {
+  float: right;
+  margin-top: -140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.about .skills .skill:nth-child(2) .logo img {
+  margin-top: 40px;
+}
+.about .skills .skill:nth-child(2) h2 {
+  margin-top: 80px;
+  text-align: end;
+}
+.about .skills .skill:nth-child(2) p {
+  text-align: end;
+}
+.about .skills .skill:last-child {
+  margin-top: 200px;
+}
+@media (max-width: 991px) {
+  .about .skills {
+    position: relative;
+    z-index: 102;
+    box-shadow: 0 0 150px #000000a6;
+    padding: 100px 130px 150px;
+    background: url(./images/bubble2.png) 125% 80% no-repeat #273040ed;
+    background-size: 40%;
+  }
+  .about .skills .skill:nth-child(2) {
+    float: unset;
+    display: block;
+    margin-top: 100px;
+  }
+  .about .skills .skill {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .about .skills .skill .logo {
+    width: 160px;
+    height: 160px;
+  }
+  .about .skills .skill .logo img {
+    width: 160px;
+    margin-top: 40px;
+  }
+  .about .skills .skill:nth-child(2) h2,
+  .about .skills .skill:nth-child(2) p {
+    text-align: start;
+  }
+  .about .skills .skill:last-child {
+    margin-top: 100px;
+  }
+}
+
+.about .works {
+  position: relative;
+  z-index: 102;
+  padding: 0px 200px;
+}
+.about .works .work {
+  justify-content: space-between;
+  display: flex;
+}
+.about .works .work .image {
+  margin-left: -40px;
+  background-color: #00e5ea;
+  width: 28vw;
+  height: 28vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+  animation: liquid 5s ease-in-out infinite;
+}
+.about .works .work .image img {
+  width: 28vw;
+  margin: 5vw 0 0 12vw;
+}
+.about .works .work .info {
+  width: 40%;
+}
+.about .works .work .info h2 {
+  color: white;
+  text-align: end;
+  font-size: 60px;
+  margin: 60px 0 20px 0;
+}
+.about .works .work .info p {
+  color: #7c8898;
+  text-align: end;
+  font-size: 22px;
+  line-height: 35px;
+  margin-top: 0;
+}
+.about .works .work .info a {
+  color: #00e7ea;
+  font-size: 23px;
+  font-weight: 600;
+  display: block;
+  text-align: end;
+}
+.about .works .work:not(:first-child) {
+  margin-top: 200px;
+}
+.about .works .work:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.about .works .work:nth-child(2) .image {
+  margin-left: 0;
+  margin-right: -40px;
+}
+.about .works .work:nth-child(2) .image img {
+  margin: 5vw 10vw 0 0;
+}
+.about .works .work:nth-child(2) .info h2,
+.about .works .work:nth-child(2) .info p,
+.about .works .work:nth-child(2) .info a {
+  text-align: start;
+}
+@media (max-width: 991px) {
+  .about .works {
+    background-color: #273040ed;
+    box-shadow: 0px 110px 200px -100px #000000a6;
+    padding: 0px 200px 100px;
+  }
+  .about .works .work {
+    flex-direction: column;
+  }
+  .about .works .work .info {
+    width: 100%;
+  }
+  .about .works .work .info h2 {
+    text-align: start;
+    margin: 30px 0 20px 0;
+  }
+  .about .works .work .info p,
+  .about .works .work .info a {
+    text-align: start;
+  }
+  .about .works .work:nth-child(2) {
+    flex-direction: column;
+  }
+  .about .works .work:nth-child(2) .image img {
+    margin: 5vw 0 0 12vw;
+  }
+  .about .works .work:not(:first-child) {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 769px) {
+  .about .works {
+    padding: 0px 100px 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about .about-text h2 {
+    font-size: 9vw;
+  }
+  .about .about-text p {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .about .skills {
+    padding: 10px 60px 100px;
+  }
+  .about .skills .skill h2 {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+  .about .works {
+    padding: 0px 60px 70px;
+  }
+  .about .works .work .info h2 {
+    font-size: 40px;
+  }
+}
+
+@keyframes app-top-move {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+@keyframes app-bottom-move {
+  0% {
+    bottom: -50%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+@keyframes liquid {
+  0% {
+    border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+    background-size: 100% 100%;
+  }
+  50% {
+    border-radius: 39% 59% 45% 48% / 50% 48% 60% 50%;
+    background-size: 300% 150%;
+  }
+  100% {
+    border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+    background-size: 100% 100%;
+  }
+}

@@ -1,0 +1,210 @@
+.rightBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70px;
+  background-color: #1a202b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 111;
+}
+.rightBar .menu-icon {
+  width: 50px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 111;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (min-width: 770px) {
+  .rightBar .menu-icon {
+    padding: 8px;
+    min-height: 50px;
+    margin-top: 5px;
+  }
+  .rightBar .menu-icon:hover {
+    background-color: #273040;
+    border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+    animation: liquid 1.5s ease-in-out infinite;
+  }
+}
+.rightBar .opened-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150vw;
+  height: 150vh;
+  border-bottom-left-radius: 100%;
+  background-color: #1a202b;
+  z-index: 110;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+.d-flex {
+  -webkit-animation: scale-up-tr 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-tr 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.d-none {
+  -webkit-animation: scale-down-tr 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-down-tr 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.rightBar .opened-menu .column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  align-items: flex-start;
+}
+.rightBar .opened-menu .column h2 {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #01b9c2;
+  margin-bottom: 0;
+}
+.rightBar .opened-menu .column p {
+  font-size: 30px;
+  color: #585f6d;
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-decoration: line-through;
+}
+.rightBar .opened-menu .column a {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  .rightBar .opened-menu {
+    justify-content: end;
+    padding-right: 24vw;
+  }
+}
+@media (max-width: 769px) {
+  .rightBar .opened-menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    padding-right: unset;
+    padding-top: 0px;
+  }
+  .rightBar .opened-menu .column {
+    min-width: 140px;
+    margin-top: 60px;
+  }
+  .rightBar .menu-icon {
+    width: 40px;
+  }
+}
+.rightBar .contactMe {
+  writing-mode: tb;
+  transform: rotate(180deg);
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: -50px;
+}
+.rightBar .socialmedia {
+  padding-bottom: 20px;
+}
+.rightBar .socialmedia img {
+  width: 50px;
+  height: 20px;
+  opacity: 0.3;
+  padding-top: 0;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.rightBar .socialmedia img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 769px) {
+  .rightBar {
+    background-color: unset;
+  }
+  .rightBar img {
+    background-color: #1a202b;
+    padding: 12px 17px 12px 7px;
+    width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .rightBar .contactMe,
+  .rightBar .socialmedia {
+    display: none;
+  }
+}
+
+@keyframes open-menu {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 150vw;
+    height: 150vh;
+  }
+}
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@-webkit-keyframes scale-down-tr {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-down-tr {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}

@@ -1,0 +1,55 @@
+.AboutLanding {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 101;
+}
+.AboutLanding .aboutLiquidShape {
+  background-color: #00e5ea;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: liquid 5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AboutLanding .aboutLiquidShape img:not(:first-child) {
+  height: 100vh;
+  transform: rotatey(55deg);
+}
+.AboutLanding .aboutLiquidShape h1 {
+  position: absolute;
+  color: white;
+  font-size: 14vw;
+  font-weight: 800;
+  margin: 0;
+}
+@media (max-width: 769px) {
+  .AboutLanding .aboutLiquidShape h1 {
+    font-size: 22vw;
+  }
+}
+.AboutLanding .aboutLiquidShape .splatter {
+  position: absolute;
+  width: 800px;
+}
+
+@keyframes liquid {
+  0% {
+    border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+    background-size: 100% 100%;
+  }
+  50% {
+    border-radius: 39% 59% 45% 48% / 50% 48% 60% 50%;
+    background-size: 300% 150%;
+  }
+  100% {
+    border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+    background-size: 100% 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.container .liquid_shape {
+  background-color: #273040;
+  width: 600px;
+  height: 600px;
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2), 0 0 90px rgba(0, 0, 0, 0.8);
+  border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+  animation: liquid 5s ease-in-out infinite;
+}
+@media (max-width: 650px) {
+  .container .liquid_shape {
+    display: none;
+  }
+}
+.container .mini-liquid_shape {
+  background-color: #00e5ea;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+  animation: liquid 5s ease-in-out infinite;
+}
+.container .mini-liquid_shape img {
+  width: 400px;
+}
+
+@keyframes liquid {
+  0% {
+    border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+    background-size: 100% 100%;
+  }
+  50% {
+    border-radius: 39% 59% 45% 48% / 50% 48% 60% 50%;
+    background-size: 300% 150%;
+  }
+  100% {
+    border-radius: 59% 48% 39% 45% / 48% 60% 43% 46%;
+    background-size: 100% 100%;
+  }
+}
+/*  Systems Engineer
+    Software Engineer */
